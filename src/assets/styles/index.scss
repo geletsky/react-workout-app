@@ -1,0 +1,12 @@
+@import './reset';
+@import './variables';
+
+body {
+	font-family: $font-family;
+
+	color: $black;
+	font-size: 18px;
+	line-height: 120%;
+
+	background-color: $white;
+}

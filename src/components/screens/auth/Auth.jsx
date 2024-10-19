@@ -1,5 +1,7 @@
+import Layout from '../../layout/Layout'
+
 export default function Auth() {
 	return (
-		<div>Auth</div>
+		<Layout>Auth</Layout>
 	)
 }

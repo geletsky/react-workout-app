@@ -1,0 +1,11 @@
+@use 'src/assets/styles/variables';
+
+.button {
+	display: block;
+	color: variables.$white;
+	padding: 16px 32px;
+	font-weight: 600;
+	font-size: 20px;
+	border-radius: variables.$radius;
+	background: variables.$blue;;
+}

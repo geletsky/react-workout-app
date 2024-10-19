@@ -1,5 +1,7 @@
+import Layout from '../../layout/Layout'
+
 export default function NewWorkout() {
 	return (
-		<div>NewWorkout</div>
+		<Layout>NewWorkout</Layout>
 	)
 }

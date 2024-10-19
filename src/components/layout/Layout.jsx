@@ -8,7 +8,7 @@ export default function Layout({
 	backLink = '/'
 }) {
 	return (
-		<section>
+		<section className={styles.wrapper}>
 			<Header backLink={backLink} />
 			{heading && <h1>{heading}</h1>}
 			{children && <div>{children}</div>}

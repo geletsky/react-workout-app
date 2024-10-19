@@ -4,12 +4,13 @@
 	padding: 12px;
 
 	position: absolute;
-	top: 20px;
-	right: -100%;
+	top: 50px;
+	opacity: 0;
+	z-index: -1;
 
 	border-radius: $radius;
 	background-color: red;
 	&.show {
-		right: 0;
+		opacity: 1;
 	}
 }

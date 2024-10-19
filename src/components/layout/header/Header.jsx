@@ -1,13 +1,15 @@
 import { IoChevronBack } from 'react-icons/io5'
-import styles from './Header.module.scss'
+
+import NavButton from '../../ui/nav-button/NavButton'
 import Hamburger from '../hamburger/Hamburger'
-import NavButton from '../../ui/NavButton/NavButton'
+
+import styles from './Header.module.scss'
 
 export default function Header() {
 	return (
 		<header className={styles.header}>
 			<NavButton>
-				<IoChevronBack size={24} />
+				<IoChevronBack />
 			</NavButton>
 			<Hamburger />
 		</header>

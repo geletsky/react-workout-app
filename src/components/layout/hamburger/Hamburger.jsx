@@ -1,15 +1,18 @@
-import { useState } from 'react'
 import { IoClose, IoMenu } from 'react-icons/io5'
-import styles from './Hamburger.module.scss'
+
+import { useOnClickOutside } from '../../../hooks/useOnClickOutside'
+
+import NavButton from '../../ui/nav-button/NavButton'
 import Menu from '../menu/Menu'
-import NavButton from '../../ui/NavButton/NavButton'
+
+import styles from './Hamburger.module.scss'
 
 export default function Hamburger() {
-	const [isShow, setIsShow] = useState(false)
+	const { ref, isShow, setIsShow } = useOnClickOutside(false)
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} ref={ref}>
 			<NavButton onClick={() => setIsShow(!isShow)}>
-				{isShow ? <IoClose size={24} /> : <IoMenu size={24} />}
+				{isShow ? <IoClose /> : <IoMenu />}
 			</NavButton>
 			<Menu isShow={isShow} />
 		</div>

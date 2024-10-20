@@ -1,0 +1,29 @@
+@use 'src/assets/styles/variables';
+
+.headingWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	& > h1 {
+		max-width: 340px;
+		margin: 0 auto;
+
+		color: variables.$white;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+	}
+
+	& > p {
+		color: variables.$white;
+		font-size: 16px;
+		line-height: 160%;
+	}
+
+	& > img {
+		margin: 0 auto;
+		width: 48px;
+		height: 48px;
+	}
+}

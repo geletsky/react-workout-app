@@ -2,6 +2,7 @@
 
 .wrapper {
 	margin: 0px 0px 60px 0px;
+	height: 100%;
 	
 	display: flex;
 	align-items: center;
@@ -10,38 +11,6 @@
 	gap: 40px;
 
 	text-align: center;
-
-	& > a {
-		display: inline-block;
-	}
-
-	& > img {
-		margin: 0 auto;
-		width: 48px;
-		height: 48px;
-	}
-}
-
-.header {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-
-	& > h1 {
-		max-width: 340px;
-		margin: 0 auto;
-
-		color: variables.$white;
-		font-size: 36px;
-		font-weight: 700;
-		line-height: 120%;
-	}
-
-	& > p {
-		color: variables.$white;
-		font-size: 16px;
-		line-height: 160%;
-	}
 }
 
 .footer {

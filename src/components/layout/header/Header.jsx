@@ -1,4 +1,4 @@
-import { IoChevronBack, IoPerson } from 'react-icons/io5'
+import { IoChevronBack } from 'react-icons/io5'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import NavButton from '../../ui/nav-button/NavButton'

@@ -1,8 +1,10 @@
 import styles from './Heading.module.scss'
 
-export default function Heading({ heading, subheading, logo }) {
+import cn from 'clsx'
+
+export default function Heading({ heading, subheading, logo, isWhite = false }) {
 	return (
-		<div className={styles.headingWrapper}>
+		<div className={cn(styles.headingWrapper, {[styles.white] : isWhite})}>
 			{logo && <img src='/images/logo.svg' alt='Logo' />}
 			<h1>{heading}</h1>
 			<p>{subheading}</p>

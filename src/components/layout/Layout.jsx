@@ -6,11 +6,12 @@ import Header from './header/Header'
 export default function Layout({
 	children,
 	backLink = '/',
-	isHeaderVisible = true
+	isHeaderVisible = true,
+	isHomePage = false
 }) {
 	return (
 		<section
-			className={cn(styles.layout, { [styles.welcomePage]: !isHeaderVisible })}
+			className={cn(styles.layout, { [styles.welcomePage]: isHomePage })}
 		>
 			{isHeaderVisible && <Header backLink={backLink} />}
 

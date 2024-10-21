@@ -10,12 +10,13 @@ import styles from './Home.module.scss'
 function Home() {
 	const navigate = useNavigate()
 	return (
-		<Layout isHeaderVisible={false}>
+		<Layout isHeaderVisible={false} isHomePage={true}>
 			<div className={styles.home}>
 				<Heading
 					heading='Welcome To sandow.ai UI Kit!'
 					subheading='Your personal fitness AI Assistant 🤖'
 					logo={true}
+					isWhite={true}
 				/>
 
 				<Button onClick={() => navigate('/new-workout')}>Sign Up</Button>

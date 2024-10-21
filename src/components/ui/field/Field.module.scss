@@ -1,0 +1,23 @@
+@use 'src/assets/styles/variables';
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	& label {
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	& input {
+		padding: 16px;
+		border-radius: variables.$radius;
+		background: variables.$gray;
+	}
+
+	& .error {
+		font-size: 14px;
+		color: rgb(164, 30, 30);
+	}
+}

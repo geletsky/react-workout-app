@@ -1,0 +1,19 @@
+@use 'src/assets/styles/variables';
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.footer {
+	margin: auto 0px 60px 0px;
+	text-align: center;
+	color: variables.$black;
+	font-size: 14px;
+	font-weight: 500;
+
+	& > a {
+		color: variables.$blue;
+	}
+}

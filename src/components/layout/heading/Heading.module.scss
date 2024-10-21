@@ -1,22 +1,24 @@
 @use 'src/assets/styles/variables';
 
 .headingWrapper {
+	margin: 100px 0px 0px 0px;
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	gap: 15px;
 
 	& > h1 {
 		max-width: 340px;
 		margin: 0 auto;
 
-		color: variables.$white;
+		color: variables.$black;
 		font-size: 36px;
 		font-weight: 700;
 		line-height: 120%;
 	}
 
 	& > p {
-		color: variables.$white;
+		color: variables.$black;
 		font-size: 16px;
 		line-height: 160%;
 	}
@@ -25,5 +27,14 @@
 		margin: 0 auto;
 		width: 48px;
 		height: 48px;
+	}
+
+	&.white {
+		& > h1 {
+			color: variables.$white;
+		}
+		& > p {
+			color: variables.$white;
+		}
 	}
 }

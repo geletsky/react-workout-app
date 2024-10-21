@@ -1,9 +1,11 @@
+import { useMutation } from '@tanstack/react-query'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 import Button from '../../ui/button/Button'
 import Field from '../../ui/field/Field'
 
+import AuthService from '../../../services/auth.service'
 import Layout from '../../layout/Layout'
 import Heading from '../../layout/heading/Heading'
 
@@ -13,10 +15,24 @@ export default function SignIn() {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors }
-	} = useForm()
+	} = useForm({ mode: 'onChange' })
 
-	const onSubmit = data => console.log(data)
+	const { mutate } = useMutation({
+		mutationKey: ['auth'],
+		mutationFn: ({ email, password }) =>
+			AuthService.main('login', email, password),
+		onSuccess: () => {
+			alert('good')
+		}
+	})
+
+	const onSubmit = (data) => {
+		mutate(data)
+		reset()
+	}
+
 	return (
 		<Layout isHeaderVisible={false}>
 			<Heading
@@ -46,7 +62,7 @@ export default function SignIn() {
 					error={errors?.password?.message}
 					name='password'
 					labelName='Password'
-					type='text'
+					type='password'
 					placeholder='Enter password'
 				/>
 

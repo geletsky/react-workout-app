@@ -1,4 +1,4 @@
-@import 'src/assets/styles/variables';
+@use 'src/assets/styles/variables';
 
 .menu {
 	padding: 12px;
@@ -8,7 +8,7 @@
 	opacity: 0;
 	z-index: -1;
 
-	border-radius: $radius;
+	border-radius: variables.$radius;
 	background-color: red;
 	&.show {
 		opacity: 1;

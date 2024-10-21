@@ -10,7 +10,7 @@ export const routes = [
 		isAuth: false
 	},
 	{
-		path: '/auth',
+		path: '/auth/sign-in',
 		component: Auth,
 		isAuth: false
 	},

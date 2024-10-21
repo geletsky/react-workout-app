@@ -5,18 +5,16 @@ import Header from './header/Header'
 
 export default function Layout({
 	children,
-	bgImage,
 	backLink = '/',
 	isHeaderVisible = true
 }) {
 	return (
 		<section
-			className={cn(styles.wrapper, { [styles.welcomePage]: !isHeaderVisible })}
-			style={{ backgroundImage: `url(${bgImage})` }}
+			className={cn(styles.layout, { [styles.welcomePage]: !isHeaderVisible })}
 		>
 			{isHeaderVisible && <Header backLink={backLink} />}
 
-			{children}
+			{children && <div className={styles.content}>{children}</div>}
 		</section>
 	)
 }

@@ -10,8 +10,8 @@ import styles from './Home.module.scss'
 function Home() {
 	const navigate = useNavigate()
 	return (
-		<Layout bgImage='/images/bg-image.png' isHeaderVisible={false}>
-			<div className={styles.wrapper}>
+		<Layout isHeaderVisible={false}>
+			<div className={styles.home}>
 				<Heading
 					heading='Welcome To sandow.ai UI Kit!'
 					subheading='Your personal fitness AI Assistant 🤖'

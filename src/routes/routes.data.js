@@ -8,7 +8,7 @@ export const routes = [
 	{
 		path: '/',
 		component: Home,
-		isAuth: false
+		isAuth: true
 	},
 	{
 		path: '/auth/sign-in',

@@ -1,38 +1,17 @@
-import { useMutation } from '@tanstack/react-query'
-import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 import Button from '../../ui/button/Button'
 import Field from '../../ui/field/Field'
 
-import AuthService from '../../../services/auth.service'
 import Layout from '../../layout/Layout'
 import Heading from '../../layout/heading/Heading'
 
 import styles from './Auth.module.scss'
+import { useAuthPage } from './useAuthPage'
 
 export default function SignIn() {
-	const {
-		register,
-		handleSubmit,
-		reset,
-		formState: { errors }
-	} = useForm({ mode: 'onChange' })
-
-	const { mutate } = useMutation({
-		mutationKey: ['auth'],
-		mutationFn: ({ email, password }) =>
-			AuthService.main('login', email, password),
-		onSuccess: () => {
-			alert('good')
-		}
-	})
-
-	const onSubmit = (data) => {
-		mutate(data)
-		reset()
-	}
-
+	const {errors, handleSubmit, onSubmit, register} = useAuthPage('login')
+	
 	return (
 		<Layout isHeaderVisible={false}>
 			<Heading

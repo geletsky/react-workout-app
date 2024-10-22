@@ -8,15 +8,10 @@ import Layout from '../../layout/Layout'
 import Heading from '../../layout/heading/Heading'
 
 import styles from './Auth.module.scss'
+import { useAuthPage } from './useAuthPage'
 
 export default function SignIn() {
-	const {
-		register,
-		handleSubmit,
-		formState: { errors }
-	} = useForm({mode: 'onChange'})
-
-	const onSubmit = data => console.log(data)
+	const { errors, handleSubmit, onSubmit, register } = useAuthPage('register')
 	return (
 		<Layout isHeaderVisible={false}>
 			<Heading

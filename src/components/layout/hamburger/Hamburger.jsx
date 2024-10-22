@@ -14,7 +14,7 @@ export default function Hamburger() {
 			<NavButton onClick={() => setIsShow(!isShow)}>
 				{isShow ? <IoClose /> : <IoMenu />}
 			</NavButton>
-			<Menu isShow={isShow} />
+			<Menu isShow={isShow} setIsShow={setIsShow} />
 		</div>
 	)
 }

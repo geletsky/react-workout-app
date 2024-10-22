@@ -2,6 +2,7 @@ import cn from 'clsx'
 
 import styles from './Layout.module.scss'
 import Header from './header/Header'
+import { useCheckToken } from '../../hooks/useCheckToken'
 
 export default function Layout({
 	children,
@@ -9,6 +10,7 @@ export default function Layout({
 	isHeaderVisible = true,
 	isHomePage = false
 }) {
+	useCheckToken()
 	return (
 		<section
 			className={cn(styles.layout, { [styles.welcomePage]: isHomePage })}

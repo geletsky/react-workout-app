@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import { TOKEN } from './app.constants'
 
 const API_URL = 'http://localhost:7777/api'
 
@@ -8,5 +9,5 @@ export const $axios = axios.create({
 	headers: {
 		'Content-Type': 'application/json'
 	},
-	Authorization: `Bearer ${Cookies.get('token')}`
+	Authorization: `Bearer ${Cookies.get(TOKEN)}`
 })

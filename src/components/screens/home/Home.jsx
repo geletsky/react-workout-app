@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import Button from '../../ui/button/Button'
 
@@ -19,11 +19,7 @@ function Home() {
 					isWhite={true}
 				/>
 
-				<Button onClick={() => navigate('/new-workout')}>Sign Up</Button>
-
-				<p className={styles.footer}>
-					Already have account? <Link to={'/auth'}>Sign In</Link>
-				</p>
+				<Button onClick={() => navigate('/new-workout')}>New Workout</Button>
 			</div>
 		</Layout>
 	)

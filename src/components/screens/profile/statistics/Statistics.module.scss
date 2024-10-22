@@ -1,0 +1,38 @@
+@use 'src/assets/styles/variables';
+
+
+.items {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.item {
+	padding: 12px 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-radius: variables.$radius;
+	background: variables.$gray;
+}
+
+.icon {
+	flex: 0 1 10%;
+}
+
+.label {
+	flex: 0 1 20%;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.value {
+	flex: 0 1 70%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	text-align-last: right;
+}

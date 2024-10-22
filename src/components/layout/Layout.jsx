@@ -7,6 +7,7 @@ import { useCheckToken } from '../../hooks/useCheckToken'
 export default function Layout({
 	children,
 	backLink = '/',
+	pageName,
 	isHeaderVisible = true,
 	isHomePage = false
 }) {
@@ -15,7 +16,7 @@ export default function Layout({
 		<section
 			className={cn(styles.layout, { [styles.welcomePage]: isHomePage })}
 		>
-			{isHeaderVisible && <Header backLink={backLink} />}
+			{isHeaderVisible && <Header backLink={backLink} pageName={pageName} />}
 
 			{children && <div className={styles.content}>{children}</div>}
 		</section>

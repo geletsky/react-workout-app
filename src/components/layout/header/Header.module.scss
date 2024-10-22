@@ -1,5 +1,4 @@
 .header {
-	
 	position: absolute;
 	top: 24px;
 	left: 0;
@@ -7,5 +6,11 @@
 	padding: 0px 24px;
 
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+}
+
+.pageName {
+	font-size: 24px;
+	font-weight: 700;
 }

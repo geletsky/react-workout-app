@@ -19,3 +19,78 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.select2-selection {
+	&__control {
+		font-family: variables.$font-family !important;
+		cursor: pointer !important;
+		margin-bottom: 2rem;
+		border-radius: 10px !important;
+		min-height: 48px !important;
+		background-color: variables.$gray !important;
+		border: 1px solid transparent !important;
+		color: variables.$black;
+		font-size: 14px;
+		width: 100%;
+		&--is-focused {
+			border-color: transparent !important;
+			box-shadow: 0 0 0 1px rgba(variables.$black, 0.3) !important;
+		}
+	}
+
+	&__menu {
+		background-color: variables.$gray !important;
+		border-radius: 10px !important;
+
+		&-list {
+			padding: 0 !important;
+			border-radius: 10px !important;
+		}
+
+		&-notice {
+			color: #946e86 !important;
+		}
+	}
+
+	&__option {
+		&--is-focused {
+			background-color: darken(variables.$gray, 7%) !important;
+		}
+		&--is-selected {
+			background-color: darken(variables.$gray, 8%) !important;
+		}
+	}
+
+	&__indicator,
+	&__indicator:hover {
+		color: variables.$black !important;
+	}
+
+	&__placeholder {
+		color: variables.$light-gray !important;
+		margin-left: 6px !important;
+		text-align: left;
+	}
+
+	&__single-value {
+		color: variables.$black !important;
+	}
+
+	&__multi-value {
+		border-radius: 6px !important;
+		background-color: lighten(variables.$gray, 10%) !important;
+
+		&__label {
+			color: variables.$black !important;
+		}
+
+		&__remove:hover {
+			background-color: variables.$black !important;
+			color: variables.$white !important;
+		}
+	}
+
+	&__input {
+		color: variables.$black !important;
+	}
+}

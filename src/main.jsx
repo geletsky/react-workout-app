@@ -17,3 +17,7 @@ createRoot(document.getElementById('root')).render(
 		</QueryClientProvider>
 	</StrictMode>
 )
+
+// TODO! 
+// Сделать уведомления
+// Добавить ссылку на создание упражнения

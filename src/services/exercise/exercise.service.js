@@ -1,23 +1,23 @@
 import { $axios } from '../../api'
 
-const EXERCISE = '/exercises'
+export const EXERCISES = '/exercises'
 
 class ExerciseService {
 	async getAll() {
-		return $axios.get(EXERCISE)
+		return $axios.get(EXERCISES)
 	}
 
 	// name, times, iconPath
 	async create(body) {
-		return $axios.post(EXERCISE, body)
+		return $axios.post(EXERCISES, body)
 	}
 
 	async update(id, body) {
-		return $axios.put(`${EXERCISE}/${id}`, body)
+		return $axios.put(`${EXERCISES}/${id}`, body)
 	}
 
 	async delete(id) {
-		return $axios.put(`${EXERCISE}/${id}`)
+		return $axios.put(`${EXERCISES}/${id}`)
 	}
 }
 

@@ -6,7 +6,7 @@ import { useCheckToken } from '../../hooks/useCheckToken'
 
 export default function Layout({
 	children,
-	backLink = '/',
+	backLink = '/profile',
 	pageName,
 	isHeaderVisible = true,
 	isHomePage = false

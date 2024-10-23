@@ -13,13 +13,13 @@ function Home() {
 		<Layout isHeaderVisible={false} isHomePage={true}>
 			<div className={styles.home}>
 				<Heading
-					heading='Welcome To sandow.ai UI Kit!'
-					subheading='Your personal fitness AI Assistant 🤖'
+					heading='Welcome To Workout App!'
+					subheading='Lorem ipsum dolor sit amet psum dolor sit amet consectetur!'
 					logo={true}
 					isWhite={true}
 				/>
 
-				<Button onClick={() => navigate('/new-workout')}>New Workout</Button>
+				<Button onClick={() => navigate('/profile')}>Go To Profile</Button>
 			</div>
 		</Layout>
 	)

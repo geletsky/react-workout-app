@@ -10,13 +10,13 @@ import styles from './Auth.module.scss'
 import { useAuthPage } from './useAuthPage'
 
 export default function SignIn() {
-	const {errors, handleSubmit, onSubmit, register} = useAuthPage('login')
-	
+	const { errors, handleSubmit, onSubmit, register } = useAuthPage('login')
+
 	return (
 		<Layout isHeaderVisible={false}>
 			<Heading
-				heading='Sign In To Sandow'
-				subheading='Let’s personalize your fitness with AI'
+				heading='Sign In'
+				subheading='Lorem ipsum dolor sit amet psum dolor sit amet consectetur!'
 				logo={true}
 			/>
 
@@ -48,7 +48,7 @@ export default function SignIn() {
 				<Button>Sign In</Button>
 			</form>
 			<p className={styles.footer}>
-				Don’t have an account? <Link to={'/auth'}>Sign Up</Link>
+				Don’t have an account? <Link to={'/auth/sign-up'}>Sign Up</Link>
 			</p>
 		</Layout>
 	)

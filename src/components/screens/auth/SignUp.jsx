@@ -1,4 +1,3 @@
-import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 import Button from '../../ui/button/Button'
@@ -16,7 +15,7 @@ export default function SignIn() {
 		<Layout isHeaderVisible={false}>
 			<Heading
 				heading='Sign Up For Free'
-				subheading='Quickly make your account in 1 minute'
+				subheading='Lorem ipsum dolor sit amet psum dolor sit amet consectetur!'
 				logo={true}
 			/>
 
@@ -48,7 +47,7 @@ export default function SignIn() {
 				<Button>Sign Up</Button>
 			</form>
 			<p className={styles.footer}>
-				Already have an account? <Link to={'/auth'}>Sign In</Link>
+				Already have an account? <Link to={'/auth/sign-in'}>Sign In</Link>
 			</p>
 		</Layout>
 	)

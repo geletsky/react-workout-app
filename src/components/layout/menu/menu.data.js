@@ -4,8 +4,16 @@ export const menu = [
 		link: '/workouts'
 	},
 	{
-		title: 'Create New',
+		title: 'Create Exercise',
+		link: '/new-exercise'
+	},
+	{
+		title: 'Create Workout',
 		link: '/new-workout'
+	},
+	{
+		title: 'Workouts',
+		link: '/workouts'
 	},
 	{
 		title: 'Profile',

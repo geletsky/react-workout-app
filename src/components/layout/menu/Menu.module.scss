@@ -1,16 +1,54 @@
 @use 'src/assets/styles/variables';
 
 .menu {
-	padding: 12px;
+	padding: 20px 0px;
 
 	position: absolute;
-	top: 50px;
+	top: 70px;
+	right: 0;
+	width: 100%;
 	opacity: 0;
-	z-index: -1;
+	z-index: 5;
 
 	border-radius: variables.$radius;
-	background-color: red;
+	background-color: variables.$gray;
+
+	transition: opacity 0.3s ease-in-out;
 	&.show {
 		opacity: 1;
+	}
+
+	& ul {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+
+.link {
+	color: variables.$black;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: '';
+		bottom: -5px;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		z-index: 2;
+
+		background-color: variables.$black;
+
+		transition: width 0.3s ease-in-out;
+	}
+
+	&:hover::before {
+		width: 100%;
 	}
 }

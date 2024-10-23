@@ -1,6 +1,6 @@
 import SignIn from '../components/screens/auth/SignIn'
 import SignUp from '../components/screens/auth/SignUp'
-// import ExerciseLog from '../components/screens/exercise-log/ExerciseLog'
+import Exercise from '../components/screens/exercise/Exercise'
 import Home from '../components/screens/home/Home'
 import NewExercise from '../components/screens/new-exercise/NewExercise'
 import NewWorkout from '../components/screens/new-workout/NewWorkout'
@@ -29,11 +29,11 @@ export const routes = [
 		component: NewExercise,
 		isAuth: true
 	},
-	// {
-	// 	path: '/exercise/:id',
-	// 	component: ExerciseLog,
-	// 	isAuth: true
-	// },
+	{
+		path: '/exercise/:id',
+		component: Exercise,
+		isAuth: true
+	},
 	{
 		path: '/new-workout',
 		component: NewWorkout,

@@ -18,7 +18,13 @@
 		}
 	}
 
-	&.completed {
+	&.completed > button {
 		background-color: variables.$blue;
 	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }

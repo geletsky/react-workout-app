@@ -13,9 +13,8 @@ const Exercise = () => {
 
 	return (
 		<Layout>
-
-			<div className={styles.wrapper}>
 			<HeaderExercise data={data} isSuccess={isSuccess} />
+			<div className={styles.wrapper}>
 				<TableHeaders />
 
 				{data?.times.map(item => (

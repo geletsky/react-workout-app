@@ -1,10 +1,8 @@
-import stylesLayout from '../../layout/Layout.module.scss'
 import Header from '../../layout/header/Header'
 
 import styles from './Exercise.module.scss'
 
 const HeaderExercise = ({ data, isSuccess }) => {
-	console.log(data);
 	return (
 		<>
 			<Header
@@ -13,14 +11,13 @@ const HeaderExercise = ({ data, isSuccess }) => {
 
 			{isSuccess && (
 				<div className={styles.heading}>
+					<h1>{data.exercise.name}</h1>
 					<img
 						src={`${import.meta.env.VITE_SERVER_URL}/${data.exercise.iconPath}`}
 						height={34}
 						alt='Icon for exercise'
 						draggable={false}
 					/>
-
-					<h1 className={stylesLayout.heading}>{data.exercise.name}</h1>
 				</div>
 			)}
 		</>

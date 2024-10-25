@@ -1,6 +1,6 @@
 # React Workout App
 
-![Welcome Page](https://github.com/geletsky/react-workout-app/readme/img/01.png)
+![Welcome Page](https://github.com/geletsky/react-workout-app/blob/main/readme/img/01.png?raw=true)
 _Welcome Page_
 
 ## Description
@@ -71,15 +71,15 @@ Here are some screenshots of the application:
 
 ### Auth Page
 
-![Auth Page](https://github.com/geletsky/react-workout-app/readme/img/02.png)
+![Auth Page](https://github.com/geletsky/react-workout-app/blob/main/readme/img/02.png?raw=true)
 
 ### Create Exercise Page
 
-![Create Exercise Page](https://github.com/geletsky/react-workout-app/readme/img/03.png)
+![Create Exercise Page](https://github.com/geletsky/react-workout-app/blob/main/readme/img/03.png?raw=true)
 
 ### Profile Page
 
-![Profile Page](https://github.com/geletsky/react-workout-app/readme/img/04.png)
+![Profile Page](https://github.com/geletsky/react-workout-app/blob/main/readme/img/04.png?raw=true)
 
 ## Author
 

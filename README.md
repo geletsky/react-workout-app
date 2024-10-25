@@ -1,7 +1,8 @@
 # React Workout App
 
 ![Welcome Page](https://github.com/geletsky/react-workout-app/blob/main/readme/img/01.png?raw=true)
-_Welcome Page_
+
+<p align="center">Welcome Page</p>
 
 ## Description
 
